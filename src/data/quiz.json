@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "question": "What country hosted the very first winter Olympics in 1924?",
+      "choices": ["Finland", "France", "Canada", "Norway"],
+      "answer": "France",
+      "image": "winter.jpg"
+    },
+    {
+      "question": "Where is the Olympic Flame lit at start of every olympics (both Summer and Winter)?",
+      "choices": ["United Kingdom", "Greece", "Switzerland", "Italy"],
+      "answer": "Greece",
+      "image": "flame.jpg"
+    },
+    {
+      "question": "What city is hosting the 2022 Winter Olympics?",
+      "choices": ["Vancouver, Canada", "Sochi, Russia", "Beijing, China", "Oslo, Norway"],
+      "answer": "Beijing, China",
+      "image": "winter-mountain.jpg"
+    },
+    {
+      "question": "How many rings on the Olympic Flag?",
+      "choices": ["4", "5", "6", "7"],
+      "answer": "5",
+      "image": "winter-sunset.jpg"
+    },
+    {
+      "question": "The iconic olympic theme - 'Bugler’s Dream', composed by French-American composer Leo Arnaud, was first used with the tv broadcast of which winter olympics?",
+      "choices": ["1964 in Austria", "1968 in France", "1972 in Japan", "1980 in USA"],
+      "answer": "1968 in France",
+      "image": "winter-night.jpg"
+    },
+    {
+      "question": "With 329 medals won (prior to the 2022 Olympics), which country has won the most medals in the winter olympics?",
+      "choices": ["USA", "Soviet Union/Russia", "Norway", "Germany"],
+      "answer": "Norway",
+      "image": "winter.jpg"
+    },
+    {
+      "question": "True or False... in the sport of curling, 'Double Takeout' is a stone that removes two of the opponents stones from play?",
+      "choices": ["True", "False"],
+      "answer": "True",
+      "image": "lift.jpg"
+    },
+    {
+      "question": "Which two countries played in the famous 'Miracle on Ice' hockey gold medal match in 1980?",
+      "choices": ["Norway and Finland","USA and Soviet Union", "USA and Canada", "Canada and Sweden"],
+      "answer": "USA and Soviet Union",
+      "image": "winter-night.jpg"
+    },
+    {
+      "question": "The biathlon combines which two sports?",
+      "choices": ["cross-country skiing and archery", "cross-country skiing and rifle shooting", "snowboarding and archery", "cross-country skiing and snowboarding"],
+      "answer": "cross-country skiing and rifle shooting",
+      "image": "winter.jpg"
+    },
+    {
+      "question": "True or False, luge athletes ride the sled down the track head first while skeleton athletes go feet first?",
+      "choices": ["True", "False"],
+      "answer": "False",
+      "image": "winter-mountain.jpg"
+    }
+  ]
+}
