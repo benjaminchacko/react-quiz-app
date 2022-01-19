@@ -7,7 +7,6 @@ import End from "./components/End";
 import Modal from "./components/Modal";
 import quizData from "./data/quiz.json";
 
-
 const App = () => {
   const [step, setStep] = useState(1);
   const [activeQuestion, setActiveQuestion] = useState(0);

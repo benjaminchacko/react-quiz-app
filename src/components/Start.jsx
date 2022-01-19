@@ -6,7 +6,7 @@ const Start = ({ onQuizStart }) => {
     <div className="card">
       <div className="card-content">
         <div className="content">
-          <h1>General Knowledge Quiz - Olympics Edition</h1>
+          <h1>General Knowledge Quiz - Winter Olympics Edition</h1>
           <p>Good luck!</p>
           <button className="button is-info is-medium" onClick={onQuizStart}>Start</button>
         </div>

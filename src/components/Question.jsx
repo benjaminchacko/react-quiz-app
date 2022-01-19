@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import React, { useState, useEffect, useRef } from "react";
+import Timer from "./Timer";
 
 const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion, onSetStep }) => {
-  console.log(data);
   const [selected, setSelected] = useState("");
   const [error, setError] = useState("");
   const radiosWrapper = useRef();
@@ -34,19 +34,17 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
     }
   };
 
+  const goToResults = () => {
+    onSetStep(3);
+  };
+
   return (
     <div className="columns">
-      <div className="column">
-        <div id="card-1" className="card">
-          <div className="card-content images">
-            <img src={data.image} alt="question" />
-        </div>
-        </div>
-      </div>
       <div className="column">
         <div className="card">
           <div className="card-content">
             <div className="content">
+              <div><Timer goToResults={goToResults} /></div>
               <h2 className="mb-5">{data.question}</h2>
               <div className="control" ref={radiosWrapper}>
                 {data.choices.map((choice, i) => (
@@ -62,7 +60,13 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
           </div>
         </div>
       </div>
-
+      <div className="column">
+        <div id="card-1" className="card">
+          <div className="card-content images">
+            <img src={data.image} alt="question" />
+          </div>
+        </div>
+      </div>
     </div>
 
   );
