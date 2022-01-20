@@ -23,6 +23,8 @@ const App = () => {
     setStep(2);
   };
 
+
+
   return (
     <div className="App">
       {step === 1 && <Start onQuizStart={quizStartHandler} />}

@@ -1,124 +1,48 @@
+/* 
+ Not currently used in project, trying figure out how to randomize an array of objects.
+*/
 const questionBank = [
     {
       id: 1,
-      question: "Question #1: Where is the Olympic Flame lit at start of every Olympics?",
-      answers: [
-        {
-          text: "A. Olympia, Greece",
-          correct: true,
-        },
-        {
-          text: "B. London, England",
-          correct: false,
-        },
-        {
-          text: "C. Tokyo, Japan",
-          correct: false,
-        },
-        {
-          text: "D. New York City, USA",
-          correct: false,
-        }
-      ]
+      "question": "Where is the Olympic Flame lit at start of every Olympics?",
+      choices: ["United Kingdom", "Greece", "Switzerland", "Italy"],
+      answer: "Greece",
+      image: "flame.jpg"
     },
     {
       id: 2,
-      question: "Question #2: What country hosted the first winter Olympics in 1924?",
-      answers: [
-        {
-          text: "A. Finland",
-          correct: false,
-        },
-        {
-          text: "B. France",
-          correct: true,
-        },
-        {
-          text: "C. Canada",
-          correct: false,
-        },
-        {
-          text: "D. Germany",
-          correct: false,
-        }, 
-        {
-          text: "E. Russia",
-          correct: false,
-        }
-      ]
+      "question": "What country hosted the first winter Olympics in 1924?",
+      choices: ["Finland", "France", "Canada", "Norway"],
+      answer: "France",
+      image: "winter.jpg"
     },
     {
       id: 3,
-      question: "Question #3: What city is hosting the 2022 Winter Olympics?",
-      answers: [
-        {
-          text: "A. Vancouver, Canada",
-          correct: false,
-        },
-        {
-          text: "B. Sochi, Russia",
-          correct: false,
-        },
-        {
-          text: "C. Beijing, China",
-          correct: true,
-        },
-        {
-          text: "D. Oslo, Norway",
-          correct: false,
-        }
-      ]
+      "question": "What city is hosting the 2022 Winter Olympics?",
+      choices: ["Vancouver, Canada", "Sochi, Russia", "Beijing, China", "Oslo, Norway"],
+      answer: "Beijing, China",
+      image: "winter-mountain.jpg"
     },
     {
       id: 4,
-      question: "Question #4: How many rings on the Olympic Flag?",
-      answers: [
-        {
-          text: "A. 4",
-          correct: false,
-        },
-        {
-          text: "B. 5",
-          correct: true,
-        },
-        {
-          text: "C. 6",
-          correct: false,
-        },
-        {
-          text: "D. 7",
-          correct: false,
-        }
-      ]
+      "question": "How many rings on the Olympic Flag?",
+      choices: ["4", "5", "6", "7"],
+      answer: "5",
+      image: "winter-sunset.jpg"
     },
     {
       id: 5,
-      question: "Question #5: True or false... in the sport of Curling, Double Takeout is a stone that removes two of the opponents stones from play.?",
-      answers: [
-        {
-          text: "A. True",
-          correct: true,
-        },
-        {
-          text: "B. False",
-          correct: false,
-        },
-      ]
+      "question": "True or false... in the sport of Curling, Double Takeout is a stone that removes two of the opponents stones from play.?",
+      choices: ["True", "False"],
+      answer: "True",
+      image: "lift.jpg"
     },
     {
       id: 6,
-      question: "Question #6: True or false, Luge athletes ride the sled down the track head first while Skelton Athletes go feet first?",
-      answers: [
-        {
-          text: "A. False",
-          correct: true,
-        },
-        {
-          text: "B. True",
-          correct: false,
-        },
-
-      ]
+      "question": "True or false, Luge athletes ride the sled down the track head first while Skelton Athletes go feet first?",
+      choices: ["True", "False"],
+      answer: "False",
+      image: "winter-mountain.jpg"
     },
   ];
 

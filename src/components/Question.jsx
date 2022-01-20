@@ -38,6 +38,8 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
     onSetStep(3);
   };
 
+  console.log();
+
   return (
     <div className="columns">
       <div className="column">
@@ -45,7 +47,9 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
           <div className="card-content">
             <div className="content">
               <div><Timer goToResults={goToResults} /></div>
+              <div className="total-questions is-size-4">Question {activeQuestion + 1} of {numberOfQuestions}</div>
               <h2 className="mb-5">{data.question}</h2>
+              
               <div className="control" ref={radiosWrapper}>
                 {data.choices.map((choice, i) => (
                   <label className="radio has-background-light" key={i}>
