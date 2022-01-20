@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import React, { useState, useEffect, useRef } from "react";
-import Timer from "./Timer";
 
 const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion, onSetStep }) => {
   const [selected, setSelected] = useState("");
@@ -34,45 +33,22 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
     }
   };
 
-  const goToResults = () => {
-    onSetStep(3);
-  };
-
-  console.log();
 
   return (
-    <div className="columns">
-      <div className="column">
-        <div className="card">
-          <div className="card-content">
-            <div className="content">
-              <div><Timer goToResults={goToResults} /></div>
-              <div className="total-questions is-size-4">Question {activeQuestion + 1} of {numberOfQuestions}</div>
-              <h2 className="mb-5">{data.question}</h2>
-              
-              <div className="control" ref={radiosWrapper}>
-                {data.choices.map((choice, i) => (
-                  <label className="radio has-background-light" key={i}>
-                    <input type="radio" name="answer" value={choice} onChange={changeHandler} />
-                    {choice}
-                  </label>
-                ))}
-              </div>
-              {error && <div className="has-text-danger">{error}</div>}
-              <button className="button is-link is-medium is-fullwidth mt-4" onClick={nextClickHandler}>Next</button>
-            </div>
-          </div>
-        </div>
+    <div>
+      <div className="total-questions is-size-4">Question {activeQuestion + 1} of {numberOfQuestions}</div>
+      <h2 className="mb-5">{data.question}</h2>
+      <div className="control" ref={radiosWrapper}>
+        {data.choices.map((choice, i) => (
+          <label className="radio has-background-light" key={i}>
+            <input type="radio" name="answer" value={choice} onChange={changeHandler} />
+            {choice}
+          </label>
+        ))}
       </div>
-      <div className="column">
-        <div id="card-1" className="card">
-          <div className="card-content images">
-            <img src={data.image} alt="question" />
-          </div>
-        </div>
-      </div>
+      {error && <div className="has-text-danger">{error}</div>}
+      <button className="button is-link is-medium is-fullwidth mt-4" onClick={nextClickHandler}>Next</button>
     </div>
-
   );
 };
 

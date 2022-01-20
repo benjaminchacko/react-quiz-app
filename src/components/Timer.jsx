@@ -1,9 +1,8 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unescaped-entities */
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
-const Timer = ({ goToResults }) => {
-    const [timer, setTimer] = useState("00:00:00");
+const Timer = ({ timer, setTimer }) => {
     const timeRef = useRef(null);
 
     const getTimeRemaining = (e) => {
@@ -35,7 +34,7 @@ const Timer = ({ goToResults }) => {
         // If you adjust it you should also need to
         // adjust the end time formula we are about
         // to code next    
-        setTimer("00:01:00");
+        setTimer("00:03:00");
 
         // If you try to remove this line the 
         // updating of timer Variable will be
@@ -51,7 +50,7 @@ const Timer = ({ goToResults }) => {
         let deadline = new Date();
         // This is where you need to adjust if 
         // you extend to add more time
-        deadline.setMinutes(deadline.getMinutes() + 1);
+        deadline.setMinutes(deadline.getMinutes() + 3);
         return deadline;
     };
 
@@ -59,18 +58,13 @@ const Timer = ({ goToResults }) => {
         clearTimer(getDeadTime());
     }, []);
 
-    const delay = (duration, callback) => {
-        setTimeout(() => {
-          callback();
-        }, duration);
-      };
+    const onClickReset = () => {
+        clearTimer(getDeadTime());
+    };
 
     return (
         <div>
-            <h2>{timer} {timer === "00:00:00" ? 
-            <div>
-                <div>Time's Up!</div>
-                <button className="button is-link is-medium is-fullwidth mt-4" onClick={goToResults}>See Results</button></div> : null}</h2>
+            <h2>{timer}</h2>
         </div>
     );
 };
