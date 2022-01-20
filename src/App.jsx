@@ -22,7 +22,6 @@ const App = () => {
   const resetClickHandler = () => {
     setActiveQuestion(0);
     setAnswers([]);
-    setStep(2);
     setStep(1);
     setTimer(null);
   };
