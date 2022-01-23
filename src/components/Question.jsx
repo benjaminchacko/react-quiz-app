@@ -37,7 +37,7 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
   return (
     <div>
       <div className="total-questions is-size-4">Question {activeQuestion + 1} of {numberOfQuestions}</div>
-      <h2 className="mb-5">{data.question}</h2>
+      <h3 className="mb-5">{data.question}</h3>
       <div className="control" ref={radiosWrapper}>
         {data.choices.map((choice, i) => (
           <label className="radio has-background-light" key={i}>
@@ -47,7 +47,7 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
         ))}
       </div>
       {error && <div className="has-text-danger">{error}</div>}
-      <button className="button is-link is-medium is-fullwidth mt-4" onClick={nextClickHandler}>Next</button>
+      <button className="button is-link is-medium is-fullwidth mt-4" onClick={nextClickHandler}>{activeQuestion + 1 === numberOfQuestions ? "Show Results" : "Next"}</button>
     </div>
   );
 };

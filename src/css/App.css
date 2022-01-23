@@ -8,7 +8,7 @@
 .App .card {
   background: white;
   margin: auto;
-  max-width: 32rem;
+  max-width: 30rem;
   width: 100%;
   text-align: center;
   background: linear-gradient(
@@ -16,7 +16,7 @@
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.3)
   );
-  backdrop-filter: blur(2rem);
+  backdrop-filter: blur(6rem);
 }
 
 .images {

@@ -3,7 +3,7 @@ body,
 #root {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(to bottom right, #238E23, #00B3CC);
+  background: linear-gradient(to bottom right, #ED8B00,#FFF, #006E33, #E10600, #FFF, #06038D);
 }
 
 body {

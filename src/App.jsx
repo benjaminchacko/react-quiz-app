@@ -31,7 +31,7 @@ const App = () => {
   return (
     <div className="App">
       {step === 1 && <Start onQuizStart={quizStartHandler} />}
-      {step === 2 && <QuestionLayout 
+      {step === 2 && <QuestionLayout
         data={quizData.data[activeQuestion]}
         onAnswerUpdate={setAnswers}
         numberOfQuestions={quizData.data.length}
@@ -41,17 +41,19 @@ const App = () => {
         timer={timer}
         setTimer={setTimer}
       />}
-      {step === 3 && <End 
+      {step === 3 && <End
         results={answers}
         data={quizData.data}
         onReset={resetClickHandler}
         onAnswersCheck={() => setShowModal(true)}
       />}
 
-      {showModal && <Modal 
+      {showModal && <Modal
         onClose={() => setShowModal(false)}
         results={answers}
         data={quizData.data}
+        numberOfQuestions={quizData.data.length}
+        activeQuestion={activeQuestion}
       />}
     </div>
   );

@@ -34,7 +34,7 @@ const Timer = ({ timer, setTimer }) => {
         // If you adjust it you should also need to
         // adjust the end time formula we are about
         // to code next    
-        setTimer("00:03:00");
+        setTimer("00:05:00");
 
         // If you try to remove this line the 
         // updating of timer Variable will be
@@ -50,7 +50,7 @@ const Timer = ({ timer, setTimer }) => {
         let deadline = new Date();
         // This is where you need to adjust if 
         // you extend to add more time
-        deadline.setMinutes(deadline.getMinutes() + 3);
+        deadline.setMinutes(deadline.getMinutes() + 5);
         return deadline;
     };
 
