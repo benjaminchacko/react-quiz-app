@@ -6,14 +6,13 @@ import End from "./components/End";
 import Modal from "./components/Modal";
 import quizData from "./data/quiz.json";
 
-import QuestionLayout from "./components/QuestionLayout";
+import Question from "./components/Question";
 
 const App = () => {
   const [step, setStep] = useState(1);
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [answers, setAnswers] = useState([]);
   const [showModal, setShowModal] = useState(false);
-  const [timer, setTimer] = useState("00:00:00");
 
   const quizStartHandler = () => {
     setStep(2);
@@ -22,28 +21,26 @@ const App = () => {
   const resetClickHandler = () => {
     setActiveQuestion(0);
     setAnswers([]);
-    setStep(1);
-    setTimer(null);
+    setStep(2);
   };
 
+  const { data } = quizData;
 
-
+  console.log("App Rendering")
   return (
     <div className="App">
       {step === 1 && <Start onQuizStart={quizStartHandler} />}
-      {step === 2 && <QuestionLayout
-        data={quizData.data[activeQuestion]}
+      {step === 2 && <Question
+        data={data[activeQuestion]}
         onAnswerUpdate={setAnswers}
-        numberOfQuestions={quizData.data.length}
+        numberOfQuestions={data.length}
         activeQuestion={activeQuestion}
         onSetActiveQuestion={setActiveQuestion}
         onSetStep={setStep}
-        timer={timer}
-        setTimer={setTimer}
       />}
       {step === 3 && <End
         results={answers}
-        data={quizData.data}
+        data={data}
         onReset={resetClickHandler}
         onAnswersCheck={() => setShowModal(true)}
       />}
@@ -51,8 +48,8 @@ const App = () => {
       {showModal && <Modal
         onClose={() => setShowModal(false)}
         results={answers}
-        data={quizData.data}
-        numberOfQuestions={quizData.data.length}
+        data={data}
+        numberOfQuestions={data.length}
         activeQuestion={activeQuestion}
       />}
     </div>

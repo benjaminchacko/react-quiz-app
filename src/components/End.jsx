@@ -23,7 +23,7 @@ const End = ({ results, data, onReset, onAnswersCheck }) => {
           <p className="is-size-3">{correctAnswers} of {data.length}</p>
           <p className="is-size-3"><strong>{Math.floor((correctAnswers / data.length) * 100)}%</strong></p>
           <button className="button is-info mr-2" onClick={onAnswersCheck}>Check your answers</button>
-          <button className="button is-success" onClick={onReset}>Return Home</button>
+          <button className="button is-success" onClick={onReset}>Try Again</button>
         </div>
       </div>
     </div>
