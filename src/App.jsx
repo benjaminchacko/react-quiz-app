@@ -25,8 +25,7 @@ const App = () => {
   };
 
   const { data } = quizData;
-
-  console.log("App Rendering")
+  
   return (
     <div className="App">
       {step === 1 && <Start onQuizStart={quizStartHandler} />}

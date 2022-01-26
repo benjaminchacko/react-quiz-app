@@ -4,8 +4,9 @@
       "id": 1,
       "question": "What country hosted the very first Winter Olympics in 1924?",
       "choices": ["Finland", "France", "Canada", "Norway"],
+      "choices_p": ["Finland - 45%", "France - 34%", "Canada - 23%", "Norway - 23%"],
+      "choices_50": ["Finland", "France"],
       "answer": "France",
-      "percentages": ["45", "24", "45", "24"],
       "image": "winter.jpg",
       "reference": "https://www.topendsports.com/events/winter/hosts/index.htm"
     },
@@ -13,6 +14,8 @@
       "id": 2,
       "question": "Where is the Olympic Flame lit before the start of every olympics (both Summer and Winter)?",
       "choices": ["United Kingdom", "Greece", "Switzerland", "Italy"],
+      "choices_p": ["United Kingdom - 45%", "Greece - 34%", "Switzerland - 23%", "Italy - 23%"],
+      "choices_50": ["Greece", "Italy"],
       "answer": "Greece",
       "image": "flame.jpg",
       "reference": "https://olympics.com/en/news/the-amazing-story-of-the-olympic-flame"
@@ -21,6 +24,8 @@
       "id": 3,
       "question": "What city is hosting the 2022 Winter Olympics?",
       "choices": ["Vancouver, Canada", "Sochi, Russia", "Beijing, China", "Oslo, Norway"],
+      "choices_p": ["Vancouver, Canada - 45%", "Sochi, Russia - 45% ", "Beijing, China - 45%", "Oslo, Norway - 45%"],
+      "choices_50": ["Vancouver, Canada", "Beijing, China"],
       "answer": "Beijing, China",
       "image": "winter-mountain.jpg",
       "reference": "https://olympics.com/en/beijing-2022/"
@@ -29,6 +34,8 @@
       "id": 4,
       "question": "What two sports started at the Summer Olympics and were later moved to the Winter Olympics?",
       "choices": ["Figure Skating and Ice Hockey", "Curling and Snowboarding", "Figure Skating and Ice Dancing", "Biathlon and Bobsledding"],
+      "choices_p": ["Figure Skating and Ice Hockey - 45%", "Curling and Snowboarding - 34%", "Figure Skating and Ice Dancing - 23%", "Biathlon and Bobsledding - 23%"],
+      "choices_50": ["Figure Skating and Ice Hockey", "Figure Skating and Ice Dancing"],
       "answer": "Figure Skating and Ice Hockey",
       "image": "winter-sunset.jpg",
       "reference": "https://www.topendsports.com/events/discontinued/winter.htm"
@@ -37,6 +44,8 @@
       "id": 5,
       "question": "Which of the following sports is NOT a Winter Olympics event?",
       "choices": ["Freestyle Skiing", "Motocross", "Ski Jumping", "Nordic Combined"],
+      "choices_p": ["Freestyle Skiing - 45%", "Motocross - 34%", "Ski Jumping - 23%", "Nordic Combined - 23%"],
+      "choices_50": ["Motocross", "Nordic Combined"],
       "answer": "Motocross",
       "image": "winter-night.jpg",
       "reference": "https://olympics.com/en/beijing-2022/sports/"
@@ -45,6 +54,8 @@
       "id": 6,
       "question": "The iconic olympic theme - 'Bugler’s Dream', composed by French-American composer Leo Arnaud, was first used with the tv broadcast of which winter olympics?",
       "choices": ["1964 in Austria", "1968 in France", "1972 in Japan", "1980 in USA"],
+      "choices_p": ["1964 in Austria - 45%", "1968 in France - 34%", "1972 in Japan - 23%", "1980 in USA - 23%"],
+      "choices_50": ["1968 in France", "1980 in USA"],
       "answer": "1968 in France",
       "image": "snow-fall.jpg",
       "reference": "https://www.liquisearch.com/leo_arnaud/buglers_dream"
@@ -53,6 +64,8 @@
       "id": 7,
       "question": "What North American city was awarded the Winter Olympics in 1976 but had to give up hosting due to lack of funding?",
       "choices": ["Seattle", "Denver", "Toronto", "Minneapolis-St. Paul"],
+      "choices_p": ["Seattle - 45%", "Denver - 34%", "Toronto - 23%", "Minneapolis-St. Paul - 23%"],
+      "choices_50": ["Denver", "Toronto"],
       "answer": "Denver",
       "image": "ice-melting.jpg",
       "reference": "https://www.theguardian.com/sport/blog/2015/apr/07/when-denver-rejected-the-olympics-in-favour-of-the-environment-and-economics"
@@ -61,6 +74,8 @@
       "id": 8,
       "question": "With 329 medals won (prior to the 2022 Olympics), which country has won the most medals in the winter olympics?",
       "choices": ["USA", "Soviet Union/Russia", "Germany", "Norway"],
+      "choices_p": ["USA - 45%", "Soviet Union/Russia - 34%", "Germany - 23%", "Norway - 23%"],
+      "choices_50": ["Soviet Union/Russia", "Norway"],
       "answer": "Norway",
       "image": "lamppost.jpg",
       "reference": "https://www.topendsports.com/events/winter/medal-tally/all-time.htm"
@@ -69,6 +84,8 @@
       "id": 9,
       "question": "Hannah Brandt and Marissa Brandt (birth name: Park Yoon-jung) are sisters and both Hockey players, but represented two different countries at the 2018 Olympics. Which countries did they represent?",
       "choices": ["USA and Canada", "USA and Unified Korea Team", "Finland and Japan", "Finland and Sweden"],
+      "choices_p": ["USA and Canada - 45%", "USA and Unified Korea Team - 34%", "Finland and Japan - 23%", "Finland and Sweden - 23%"],
+      "choices_50": ["USA and Canada", "USA and Unified Korea Team"],
       "answer": "USA and Unified Korea Team",
       "image": "lift.jpg",
       "reference": "https://www.teamusa.org/News/2018/February/16/Two-Sisters-Two-Countries-Hannah-And-Marissa-Brandt-Share-Unique-Hockey-Story"
@@ -77,6 +94,8 @@
       "id": 10,
       "question": "What year did the olympic torch relay include, for the first time, an unlit torch in outer space when cosmonauts and astronauts made the handoffs at the ISS?",
       "choices": ["2006 for Torino", "2010 for Vancouver", "2014 for Sochi", "2018 for PyeongChang"],
+      "choices_p": ["2006 for Torino - 45%", "2010 for Vancouver - 34%", "2014 for Sochi - 23%", "2018 for PyeongChang - 23%"],
+      "choices_50": ["2010 for Vancouver", "2014 for Sochi"],
       "answer": "2014 for Sochi",
       "image": "launch.jpg",
       "reference": "https://www.espn.com/olympics/story/_/id/9938569/olympic-flame-2014-sochi-games-space-via-rocket"
@@ -85,6 +104,8 @@
       "id": 11,
       "question": "True or False... in the sport of Curling, 'Double Takeout' is a stone that removes two of the opponents stones from play?",
       "choices": ["True", "False"],
+      "choices_p": ["True - 64%", "False - 36%"],
+      "choices_50": ["True", "False"],
       "answer": "True",
       "image": "red-trees.jpg",
       "reference": "https://curlingclass.com/glossary-of-curling-terms/"
@@ -93,6 +114,8 @@
       "id": 12,
       "question": "What is the only nation to win a medal at Winter Olympics but not at the Summer Olympics?",
       "choices": ["Liechtenstein","Iceland", "Estonia", "Serbia"],
+      "choices_p": ["Liechtenstein - 45%", "Iceland - 34%", "Estonia - 23%", "Serbia - 23%"],
+      "choices_50": ["Liechtenstein", "Estonia"],
       "answer": "Liechtenstein",
       "image": "snow-icicles2.jpg",
       "reference": "https://www.topendsports.com/events/winter/trivia.htm"
@@ -101,6 +124,8 @@
       "id": 13,
       "question": "Which two countries played in the famous 'Miracle on Ice' hockey match in 1980?",
       "choices": ["Norway and Finland","USA and Soviet Union", "USA and Canada", "Canada and Sweden"],
+      "choices_p": ["Norway and Finland - 45%", "USA and Soviet Union - 34%", "USA and Canada - 23%", "Canada and Sweden - 23%"],
+      "choices_50": ["Norway and Finland", "USA and Soviet Union"],
       "answer": "USA and Soviet Union",
       "image": "winter-night2.jpg",
       "reference": "https://icehockey.fandom.com/wiki/Miracle_on_Ice"
@@ -109,6 +134,8 @@
       "id": 14,
       "question": "The biathlon combines which two sports?",
       "choices": ["cross-country skiing and archery", "snowboarding and archery", "cross-country skiing and rifle shooting", "cross-country skiing and snowboarding"],
+      "choices_p": ["cross-country skiing and archery - 45%", "snowboarding and archery - 34%", "cross-country skiing and rifle shooting - 23%", "cross-country skiing and snowboarding - 23%"],
+      "choices_50": ["cross-country skiing and archery", "cross-country skiing and rifle shooting"],
       "answer": "cross-country skiing and rifle shooting",
       "image": "snow-icicles.jpg",
       "reference": "https://www.britannica.com/sports/biathlon"
@@ -117,6 +144,8 @@
       "id": 15,
       "question": "True or False, Luge athletes ride the sled down the track head first while Skeleton athletes go feet first?",
       "choices": ["True", "False"],
+      "choices_p": ["True - 75%", "False - 25%"],
+      "choices_50": ["True", "False"],
       "answer": "False",
       "image": "winter-night3.jpg",
       "reference": "https://www.popsugar.com/fitness/luge-vs-skeleton-48589858"
