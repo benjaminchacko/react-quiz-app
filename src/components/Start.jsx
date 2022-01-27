@@ -1,6 +1,4 @@
 /* eslint-disable react/prop-types */
-import React from "react";
-
 const Start = ({ onQuizStart }) => {
   return (
     <div className="card">
@@ -16,7 +14,9 @@ const Start = ({ onQuizStart }) => {
             fontWeight: "bold",
           }}>Instructions: 15 questions await you, 2 hints will be at your disposal - 50/50 and Skip. 50/50 will allow you to eliminate 2 wrong answers, leaving 1 wrong answer and 1 correct answer <span style={{
             color: "red"
-          }}>(WARNING: This does nothing to True/False questions)</span>. Skip will allow you to skip the question but still get full points. Have fun!</p>
+          }}>(WARNING: This does nothing to True/False questions)</span>. Skip will allow you to skip the question but still get full points. Have fun! <span style={{
+            color: "red"
+          }}>(Note: Please visit the about page before or after and not during the quiz, Thanks!)</span></p>
           <button className="button is-info is-medium" onClick={onQuizStart}>Start</button>
         </div>
       </div>

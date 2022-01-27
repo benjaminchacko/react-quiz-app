@@ -6,7 +6,8 @@ module.exports = {
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "plugin:react/jsx-runtime"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -17,6 +18,7 @@ module.exports = {
     },
     "plugins": [
         "react"
+
     ],
     "rules": {
         "semi": ["error", "always"],

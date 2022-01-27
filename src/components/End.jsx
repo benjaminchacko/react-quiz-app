@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const End = ({ results, data, onReset, onAnswersCheck }) => {
   const [correctAnswers, setCorrectAnswers] = useState(0);

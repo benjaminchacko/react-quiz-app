@@ -1,57 +1,17 @@
-import React, { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import "./css/App.css";
 
-import Start from "./components/Start";
-import End from "./components/End";
-import Modal from "./components/Modal";
-import quizData from "./data/quiz.json";
-
-import Question from "./components/Question";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
+import Connect from "./components/pages/Connect";
 
 const App = () => {
-  const [step, setStep] = useState(1);
-  const [activeQuestion, setActiveQuestion] = useState(0);
-  const [answers, setAnswers] = useState([]);
-  const [showModal, setShowModal] = useState(false);
-
-  const quizStartHandler = () => {
-    setStep(2);
-  };
-
-  const resetClickHandler = () => {
-    setActiveQuestion(0);
-    setAnswers([]);
-    setStep(2);
-  };
-
-  const { data } = quizData;
-  
   return (
-    <div className="App">
-      {step === 1 && <Start onQuizStart={quizStartHandler} />}
-      {step === 2 && <Question
-        data={data[activeQuestion]}
-        onAnswerUpdate={setAnswers}
-        numberOfQuestions={data.length}
-        activeQuestion={activeQuestion}
-        onSetActiveQuestion={setActiveQuestion}
-        onSetStep={setStep}
-      />}
-      {step === 3 && <End
-        results={answers}
-        data={data}
-        onReset={resetClickHandler}
-        onAnswersCheck={() => setShowModal(true)}
-      />}
-
-      {showModal && <Modal
-        onClose={() => setShowModal(false)}
-        results={answers}
-        data={data}
-        numberOfQuestions={data.length}
-        activeQuestion={activeQuestion}
-      />}
-    </div>
+    <Routes>
+      <Route path="/" exact element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/connect" element={<Connect />} />
+    </Routes>
   );
 };
 

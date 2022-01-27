@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import React from "react";
 
 const Modal = ({ onClose, results, data, numberOfQuestions }) => {
   return (
