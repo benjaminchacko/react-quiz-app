@@ -44,7 +44,7 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
     if (activeQuestion < numberOfQuestions - 1) {
       onSetActiveQuestion(activeQuestion + 1);
     } else {
-      onSetStep(3);
+      onSetStep(2);
     }
     if (dataBadge_5050 === 0) {
       setIsDisabled_5050(true);
@@ -110,7 +110,6 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
               <div className="content">
                 <button data-badge={dataBadge_5050} disabled={isDisabled_5050} className="button is-dark is-medium mt-3 mb-2 mx-2 is-rounded" onClick={handle5050}>50/50</button>
                 <button data-badge={dataBadge_skip} disabled={isDisabled_skip} className="button is-dark is-medium mt-3 mb-2 mx-2 is-rounded" onClick={handleSkip}>Skip</button>
-                <button data-badge={dataBadge_AI} disabled={isDisabled_AI} className="button is-dark is-medium mt-3 mb-2 is-rounded" onClick={handleAI}>Ask the Internet</button>
                 <div style={{
                   color: "black",
                   fontSize: "1.5rem",

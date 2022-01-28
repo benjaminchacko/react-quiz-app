@@ -34,17 +34,37 @@ const Navbar = () => {
                         fontSize: "1.1rem",
                         fontWeight: "bold",
                     }} className="navbar-item" to="/about">
-                        About Creator
+                        About
                     </Link>
-                    <Link style={{
-                        marginTop: "0.2rem",
-                        fontSize: "1.1rem",
-                        fontWeight: "bold",
-                    }} className="navbar-item" to="/connect">
-                            Connect with Creator
-                    </Link>
-                </div>
-                <div className="navbar-end">
+                    <div className="navbar-item has-dropdown is-hoverable">
+                        <a style={{
+                            marginTop: "0.2rem",
+                            fontSize: "1.1rem",
+                            fontWeight: "bold",
+                        }} className="navbar-link">
+                            More
+                        </a>
+                        <div className="navbar-dropdown">
+                            <Link style={{
+                                marginTop: "0.2rem",
+                                fontSize: "1.1rem",
+                                fontWeight: "bold",
+                            }} to="/gallery" class="navbar-item">
+                                Winter Gallery
+                            </Link>
+                            <div className="navbar-dropdown">
+                            <Link style={{
+                                marginTop: "0.2rem",
+                                fontSize: "1.1rem",
+                                fontWeight: "bold",
+                            }} to="/quotes" class="navbar-item">
+                                Quotes
+                            </Link>
+                            </div>
+                        </div>
+                        <div className="navbar-end">
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>

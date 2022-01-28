@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
-const End = ({ results, data, onReset, onAnswersCheck }) => {
+const Score = ({ results, data, onReset, onAnswersCheck }) => {
   const [correctAnswers, setCorrectAnswers] = useState(0);
 
   useEffect(() => {
@@ -34,16 +35,23 @@ const End = ({ results, data, onReset, onAnswersCheck }) => {
             fontSize: "1.5rem",
             fontWeight: "bold",
           }} className="is-size-3"><strong>{Math.floor((correctAnswers / data.length) * 100)}%</strong></p>
-          <button style={{
-            fontWeight: "bold",
-          }} className="button is-info mr-2" onClick={onAnswersCheck}>Check your answers</button>
-          <button style={{
-            fontWeight: "bold",
-          }} className="button is-success" onClick={onReset}>Try Again</button>
+          <div className="buttons are-normal is-justify-content-center">
+            <button style={{
+              fontWeight: "bold",
+            }} className="button is-primary mr-2" onClick={onAnswersCheck}>Check your answers</button>
+            <button style={{
+              fontWeight: "bold",
+            }} className="button is-primary ml-3" onClick={onReset}>Try Again</button>
+            <Link to="/">
+              <button style={{
+                fontWeight: "bold",
+              }} className="button is-primary ml-2 mt-2">Return Home</button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default End;
+export default Score;
